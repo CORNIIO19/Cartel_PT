@@ -1,0 +1,139 @@
+\documentclass[final]{beamer}
+
+\usepackage[size=custom,width=89,height=119,scale=1.60]{beamerposter}
+\usetheme{ConfPoster}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{wrapfig}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+
+\setlength{\columnsep}{1em}
+\setlength{\columnseprule}{0mm}
+
+\title{Gestor inteligente para notas academicas.}
+\author{Omar Jhonatan Sosa Bobadilla}
+\institute{Dr. Dominique Émile Henri Decouchant, Dr. Guillermo Monroy Rodríguez}
+\begin{document}
+\begin{frame}
+
+\begin{columns}[t]
+
+% ============================================================
+% COL 1
+% ============================================================
+
+\begin{column}{0.40\textwidth}
+
+% ------------------------------------------------------------
+\begin{block}{\Large Problema}
+El usuario acumula una gran cantidad de notas provenientes de:
+\begin{itemize}
+    \item Materias escolares
+    \item Tareas y proyectos
+    \item Notas personales
+    \item Colaboraciones con otras personas
+\end{itemize}
+
+Esto provoca dificultades al momento de consultarlas o relacionarlas.
+\end{block}
+
+% ------------------------------------------------------------
+\begin{block}{\Large Dificultades identificadas}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Transporte}: las notas se encuentran en diferentes dispositivos o formatos.
+    \item \textbf{Organización}: difícil clasificación manual.
+    \item \textbf{Estudio}: la información no se encuentra cuando se necesita.
+\end{itemize}
+
+Estas situaciones generan frustración y pérdida de tiempo.
+\end{block}
+
+% ------------------------------------------------------------
+\begin{block}{\Large Objetivo}
+Desarrollar un sistema inteligente capaz de:
+\begin{itemize}[leftmargin=*]
+    \item Centralizar y almacenar notas.
+    \item Clasificarlas automáticamente mediante IA.
+    \item Permitir consultas rápidas, precisas y personalizadas.
+\end{itemize}
+\end{block}
+
+\begin{center}
+\includegraphics[width=0.95\linewidth]{Contexto_2.png}
+\end{center}
+
+\end{column}
+
+% ============================================================
+% COL 2
+% ============================================================
+
+\begin{column}{0.40\textwidth}
+
+% ------------------------------------------------------------
+\begin{block}{\Large Contexto de Uso de la Aplicación}
+
+El proceso general del usuario incluye:
+
+\begin{itemize}[leftmargin=*]
+    \item Creación constante de notas personales, académicas y colaborativas.
+    \item Necesidad de consultar notas rápidamente.
+    \item Problema de fragmentación de información.
+    \item Inicio del uso de la aplicación para centralizar y organizar contenido.
+\end{itemize}
+
+La aplicación permite transformar este proceso caótico en uno estructurado y accesible.
+\end{block}
+
+% ------------------------------------------------------------
+\begin{block}{\Large Sistema Clasificador}
+El sistema utiliza técnicas de procesamiento de lenguaje natural para:
+
+\begin{itemize}[leftmargin=*]
+    \item Analizar similitudes semánticas entre palabras clave.
+    \item Detectar temas relevantes en cada nota.
+    \item Asignar etiquetas o categorías automáticas.
+\end{itemize}
+
+Las notas terminan agrupadas dentro de una base de conocimiento estructurada.
+\end{block}
+
+\begin{block}{\Large Uso de la Aplicación}
+El usuario puede realizar consultas como:
+
+\begin{quote}
+\emph{“¿Qué vimos en Sistemas Operativos el 31-10-25?”}
+\end{quote}
+
+La IA analiza la base de conocimiento y devuelve:
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Respuesta positiva}: lista de temas relacionados.
+    \item \textbf{Respuesta negativa}: indica que no se encontraron notas para esa fecha o categoría.
+\end{itemize}
+
+\end{block}
+
+% ------------------------------------------------------------
+\begin{block}{\Large Conclusiones}
+La aplicación resuelve problemas reales de organización y consulta de información mediante:
+\begin{itemize}[leftmargin=*]
+    \item Centralización de notas.
+    \item Clasificación automática con IA.
+    \item Consultas naturales y personalizadas.
+\end{itemize}
+
+Es una herramienta útil para estudiantes y profesionales que manejan grandes volúmenes de información.
+\end{block}
+
+\end{column}
+
+
+\end{columns}
+
+\end{frame}
+\end{document}
