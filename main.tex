@@ -1,8 +1,9 @@
 \documentclass[final]{beamer}
 
-\usepackage[size=custom,width=89,height=119,scale=1.60]{beamerposter}
+\usepackage[size=custom,width=90,height=119.38,scale=1.6]{beamerposter}
 \usetheme{ConfPoster}
 
+\usepackage[spanish]{babel}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{multicol}
@@ -14,9 +15,9 @@
 \setlength{\columnsep}{1em}
 \setlength{\columnseprule}{0mm}
 
-\title{Gestor inteligente para notas academicas.}
+\title{Gestor inteligente para notas academicas}
 \author{Omar Jhonatan Sosa Bobadilla}
-\institute{Dr. Dominique Émile Henri Decouchant, Dr. Guillermo Monroy Rodríguez}
+\institute{Universidad Autónoma Metropolitana, Unidad Cuajimalpa}
 \begin{document}
 \begin{frame}
 
@@ -29,7 +30,7 @@
 \begin{column}{0.40\textwidth}
 
 % ------------------------------------------------------------
-\begin{block}{\Large Problema}
+\begin{block}{\Large Introducción}
 El usuario acumula una gran cantidad de notas provenientes de:
 \begin{itemize}
     \item Materias escolares
@@ -42,7 +43,7 @@ Esto provoca dificultades al momento de consultarlas o relacionarlas.
 \end{block}
 
 % ------------------------------------------------------------
-\begin{block}{\Large Dificultades identificadas}
+\begin{block}{\Large Justificación}
 \begin{itemize}[leftmargin=*]
     \item \textbf{Transporte}: las notas se encuentran en diferentes dispositivos o formatos.
     \item \textbf{Organización}: difícil clasificación manual.
@@ -53,7 +54,8 @@ Estas situaciones generan frustración y pérdida de tiempo.
 \end{block}
 
 % ------------------------------------------------------------
-\begin{block}{\Large Objetivo}
+
+\begin{block}{\Large Estado del Arte}
 Desarrollar un sistema inteligente capaz de:
 \begin{itemize}[leftmargin=*]
     \item Centralizar y almacenar notas.
@@ -63,10 +65,12 @@ Desarrollar un sistema inteligente capaz de:
 \end{block}
 
 \begin{center}
-\includegraphics[width=0.95\linewidth]{Contexto_2.png}
+\includegraphics[width=0.8\linewidth]{images/Contexto_2.png}
 \end{center}
-
 \end{column}
+
+
+
 
 % ============================================================
 % COL 2
@@ -75,7 +79,7 @@ Desarrollar un sistema inteligente capaz de:
 \begin{column}{0.40\textwidth}
 
 % ------------------------------------------------------------
-\begin{block}{\Large Contexto de Uso de la Aplicación}
+\begin{block}{\Large Metodología}
 
 El proceso general del usuario incluye:
 
@@ -87,10 +91,7 @@ El proceso general del usuario incluye:
 \end{itemize}
 
 La aplicación permite transformar este proceso caótico en uno estructurado y accesible.
-\end{block}
 
-% ------------------------------------------------------------
-\begin{block}{\Large Sistema Clasificador}
 El sistema utiliza técnicas de procesamiento de lenguaje natural para:
 
 \begin{itemize}[leftmargin=*]
@@ -106,7 +107,7 @@ Las notas terminan agrupadas dentro de una base de conocimiento estructurada.
 El usuario puede realizar consultas como:
 
 \begin{quote}
-\emph{“¿Qué vimos en Sistemas Operativos el 31-10-25?”}
+\emph{``¿Qué vimos en Sistemas Operativos el 31-10-25?''}
 \end{quote}
 
 La IA analiza la base de conocimiento y devuelve:
@@ -119,7 +120,7 @@ La IA analiza la base de conocimiento y devuelve:
 \end{block}
 
 % ------------------------------------------------------------
-\begin{block}{\Large Conclusiones}
+\begin{block}{\Large Propuesta}
 La aplicación resuelve problemas reales de organización y consulta de información mediante:
 \begin{itemize}[leftmargin=*]
     \item Centralización de notas.

@@ -7,7 +7,7 @@
 % Modified by Nathaniel Johnston (nathaniel@nathanieljohnston.com) in August 2009
 % =============================================================================
 
-\ProvidesPackage{beamerthemeconfposter}
+\ProvidesPackage{beamerthemeConfPoster}
 \RequirePackage{tikz}		% for drawing the nice rounded boxes
 \usetikzlibrary{arrows,backgrounds}
 \RequirePackage[T1]{fontenc}
@@ -189,7 +189,7 @@
     \usebeamercolor{title in headline}{\color{black}\Huge{\textbf{\inserttitle}}\\[0.5ex]}
     \usebeamercolor{author in headline}{\color{gray}\Large{\insertauthor}\\[1ex]}
     \usebeamercolor{institute in headline}{\color{gray}\large{\insertinstitute}\\[1ex]}
-    \vskip1cm
+    %\vskip1cm
    \end{column}
    \vspace{1cm}
   \end{columns}
@@ -201,12 +201,43 @@
 %==============================================================================
 %build poster footline
 %===============================================================================
+%==============================================================================
+% Build poster footline
+%===============================================================================
 \setbeamertemplate{footline}{
 \leavevmode
-%\includegraphics[scale=0.4]{logo.png}
-%\includegraphics[scale=0.4]{logo.png}
-%\includegraphics[scale=0.4]{logo.png}
+\hspace{0.5in}\begin{beamercolorbox}[wd=47in,colsep=0.15cm]{cboxb}\end{beamercolorbox}
+\begin{columns}[t]
+  % Logo izquierdo
+  \begin{column}{0.3\linewidth}
+    \centering
+    \vspace{1cm}
+    \includegraphics[scale=1.0]{images/image5.png}
+  \end{column}
+  
+  % Información de asesores (centro)
+  \begin{column}{0.4\linewidth}    
+    \centering
+    %\vspace{0.5cm}
+    \usebeamercolor{author in footline}
+    \color{gray}\Large{\textbf{Asesores:}}\\[0.5ex]
+    \usebeamercolor{institute in footline}
+    \color{gray}\large{Dr. Dominique Émile Henri Decouchant}\\[0.2ex]
+    \color{gray}\large{Dr. Guillermo Monroy Rodríguez}\\[0.5ex]
+    \vspace{0.2cm}
+    
+  \end{column}
+  
+  % Logo derecho
+  \begin{column}{0.3\linewidth}
+    \centering
+    \vspace{1cm}
+    \includegraphics[scale=0.4]{images/image1.png}
+  \end{column}
+\end{columns}
+%\vspace{0.5cm}
 }
+%==============================================================================
 
 % Block definition
 \setbeamertemplate{block begin}
