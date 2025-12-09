@@ -13,7 +13,8 @@
 \usepackage{tcolorbox}
 \usepackage{enumitem}
 
-\setlength{\columnsep}{1em}
+% Espacio horizontal entre columnas (ajústalo a tu gusto)
+\setlength{\columnsep}{1cm} % antes: 1em
 \setlength{\columnseprule}{0mm}
 
 \title{Gestor inteligente para notas academicas}
@@ -21,6 +22,18 @@
 \institute{Universidad Autónoma Metropolitana, Unidad Cuajimalpa}
 \begin{document}
 \begin{frame}
+    
+\begin{block}{\Large Introducción}
+    En el ámbito académico, los estudiantes generan y consultan apuntes para aprender, pero cuando el volumen de información crece, los medios físicos dificultan su organización, acceso y consulta. Las herramientas digitales modernas, como Notion u Obsidian, mejoran esta experiencia, aunque presentan limitaciones: dependen de internet, no permiten consultas personalizadas y no garantizan seguridad ni control total sobre los datos, lo que pone en riesgo la información almacenada.
+
+    \vspace{.5cm}
+
+    Además, muchos estudiantes enfrentan dificultades para organizar sus conocimientos y desconocen métodos efectivos para estudiar o generar apuntes de calidad, lo que genera incertidumbre sobre su aprendizaje.
+
+    \vspace{.5cm}
+
+    Ante estas problemáticas, se plantea desarrollar una aplicación inteligente de gestión de notas que funcione offline, garantice privacidad y seguridad, permita crear una base de conocimiento personalizada y ofrezca recomendaciones de aprendizaje apoyadas en tecnologías como procesamiento local del lenguaje natural y sistemas distribuidos. Esta herramienta busca ofrecer una experiencia confiable, accesible y centrada en el usuario.
+\end{block}
 
 \begin{columns}[t]
 
@@ -28,33 +41,39 @@
 % COL 1
 % ============================================================
 
-\begin{column}{0.40\textwidth}
+\begin{column}{0.30\textwidth}
 
 % ------------------------------------------------------------
-\begin{block}{\Large Introducción}
-El usuario acumula una gran cantidad de notas provenientes de:
-\begin{itemize}
-    \item Materias escolares
-    \item Tareas y proyectos
-    \item Notas personales
-    \item Colaboraciones con otras personas
-\end{itemize}
 
-Esto provoca dificultades al momento de consultarlas o relacionarlas.
-\end{block}
 
 % ------------------------------------------------------------
 \begin{block}{\Large Justificación}
-\begin{itemize}[leftmargin=*]
-    \item \textbf{Transporte}: las notas se encuentran en diferentes dispositivos o formatos.
-    \item \textbf{Organización}: difícil clasificación manual.
-    \item \textbf{Estudio}: la información no se encuentra cuando se necesita.
-\end{itemize}
 
-Estas situaciones generan frustración y pérdida de tiempo.
+    La aplicación permitirá crear, organizar y consultar una base de conocimiento personalizada con total privacidad, incorporando tecnologías como bases de datos vectoriales para búsquedas semánticas, modelos de lenguaje locales y sistemas distribuidos, además de ofrecer funciones offline para mejorar la accesibilidad.
+
+    \vspace{.5cm}
+
+    El Gestor inteligente para notas académicas responde a la necesidad de estructurar y consultar información de forma segura, personalizada y eficiente, siendo útil para estudiantes, docentes y profesionales.
+
+    Su relevancia se sustenta en varios puntos clave:
+    
+    \begin{itemize}[leftmargin=*]
+        \item Privacidad y control de datos: el procesamiento local reduce riesgos de filtraciones y mejora el rendimiento.
+        \item Accesibilidad offline: permite consultar información desde cualquier lugar sin depender de internet.
+        \item Colaboración descentralizada: facilita el intercambio de conocimiento sin una arquitectura centralizada.
+        \item Procesamiento de lenguaje natural: potencia funciones avanzadas de búsqueda y análisis de contenido.
+        \item Mejor experiencia de usuario: soporta información multimodal para una interacción más flexible.
+        \item Disponibilidad multiplataforma: accesible en distintos dispositivos y sistemas operativos.   
+    \end{itemize}
+
 \end{block}
 
-% ------------------------------------------------------------
+\end{column}
+
+
+%col 2 reales ----------------------------------------------------------
+
+\begin{column}{0.30\textwidth}
 
 \begin{block}{\Large Estado del Arte}
 Desarrollar un sistema inteligente capaz de:
@@ -83,10 +102,7 @@ Soporte multiplataforma & Sí & Sí & Sí \\
 
 \end{block}
 
-
-
 \end{column}
-
 
 
 
@@ -94,7 +110,7 @@ Soporte multiplataforma & Sí & Sí & Sí \\
 % COL 2
 % ============================================================
 
-\begin{column}{0.40\textwidth}
+\begin{column}{0.30\textwidth}
 
 % ------------------------------------------------------------
 \begin{block}{\Large Metodología}
