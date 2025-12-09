@@ -26,7 +26,7 @@
 \def\@listi{\leftmargin\leftmarginii
 \topsep 1ex % Spacing before lists
 \parsep 0\p@ \@plus\p@
-\itemsep 6pt} % Spacing between items
+\itemsep 5pt} % Spacing between items
 \makeatother
 
 \usecaptiontemplate{\small\structure{\insertcaptionname~\insertcaptionnumber: }\insertcaption} % A fix for figure numbering
@@ -136,7 +136,7 @@
 \setbeamercolor{structure}{fg=jblue}
 \setbeamercolor{titlelike}         {bg=DarkGreen,fg=white}
 \setbeamercolor{frametitle}        {bg=DarkGreen,fg=white}
-\setbeamercolor{cboxb}{fg=black,bg=DarkGreen}
+\setbeamercolor{cboxb}{fg=black,bg=nblue}
 \setbeamercolor{cboxr}{fg=black,bg=red}
 
 % set colors for itemize/enumerate
@@ -144,7 +144,7 @@
 \setbeamercolor{item projected}{fg=white,bg=ngreen}
 
 % set colors for blocks
-\setbeamercolor{block title}{fg=DarkGreen,bg=white}
+\setbeamercolor{block title}{fg=nblue,bg=white}
 \setbeamercolor{block body}{fg=black,bg=white}
 
 % set colors for alerted blocks (blocks with frame)
@@ -186,18 +186,18 @@
  \leavevmode
   \begin{columns}
    \begin{column}{\linewidth}
-    \vskip1cm
+    \vskip0cm
     \centering
     \usebeamercolor{title in headline}{\color{black}\Huge{\textbf{\inserttitle}}\\[0.5ex]}
     \usebeamercolor{author in headline}{\color{gray}\Large{\insertauthor}\\[1ex]}
     \usebeamercolor{institute in headline}{\color{gray}\large{\insertinstitute}\\[1ex]}
     %\vskip1cm
    \end{column}
-   \vspace{1cm}
+   \vspace{0cm}
   \end{columns}
- \vspace{0.5in}
+ \vspace{0.2in}
  \hspace{0.5in}\begin{beamercolorbox}[wd=47in,colsep=0.15cm]{cboxb}\end{beamercolorbox}
- \vspace{0.1in}
+ \vspace{0.0in}
 }
 
 %==============================================================================
@@ -209,7 +209,8 @@
 \setbeamertemplate{footline}{
 \leavevmode
 \hspace{0.5in}\begin{beamercolorbox}[wd=47in,colsep=0.15cm]{cboxb}\end{beamercolorbox}
-\begin{columns}[t]
+\vspace{0.5cm}
+\begin{columns}[b]
   % Logo izquierdo
   \begin{column}{0.3\linewidth}
     \centering
@@ -218,15 +219,15 @@
   \end{column}
   
   % Información de asesores (centro)
+  
   \begin{column}{0.4\linewidth}    
     \centering
-    %\vspace{0.5cm}
+    \vspace{1cm}
     \usebeamercolor{author in footline}
-    \color{gray}\Large{\textbf{Asesores:}}\\[0.5ex]
+    \color{gray}\Large{\textbf{Asesores:}}\\[0.2ex]
     \usebeamercolor{institute in footline}
     \color{gray}\large{Dr. Dominique Émile Henri Decouchant}\\[0.2ex]
-    \color{gray}\large{Dr. Guillermo Monroy Rodríguez}\\[0.5ex]
-    \vspace{0.1cm}
+    \color{gray}\large{Dr. Guillermo Monroy Rodríguez}
     
   \end{column}
   
@@ -234,7 +235,7 @@
   \begin{column}{0.3\linewidth}
     \centering
     \vspace{1cm}
-    \includegraphics[scale=0.4]{images/image1.png}
+    \includegraphics[scale=0.3]{images/image1.png}
   \end{column}
 \end{columns}
 %\vspace{0.5cm}
@@ -244,32 +245,23 @@
 % Block definition
 \setbeamertemplate{block begin}
 {
-  \par\vskip\medskipamount
-  \begin{beamercolorbox}[colsep*=0ex,dp={2ex},center]{block title}
-    \vskip-0.25cm
+  \par\vskip-0.4cm
+  \begin{beamercolorbox}[rounded=true,sep=5pt,shadow=false,center,wd=\textwidth]{block title}
     \usebeamerfont{block title}\large\insertblocktitle
-    \begin{flushleft}
-    \vskip-1cm
-    \begin{tikzpicture}[remember picture,overlay]
-      \shade [inner color=gray,outer color=white]
-      (0,0) rectangle (\textwidth,0.3cm);
-    \end{tikzpicture}
-    \end{flushleft}
   \end{beamercolorbox}
   {\parskip0pt\par}
-  \ifbeamercolorempty[bg]{block title}
-  {}
-  {\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}
   \usebeamerfont{block body}
-  \vskip-0.5cm
-  \begin{beamercolorbox}[colsep*=0ex,vmode]{block body}
+  \vskip-1.2cm
+  \begin{tcolorbox}[boxrule=6pt,colframe=nblue,colback=white,arc=5pt,
+    top=5pt,bottom=5pt,left=10pt,right=10pt]
+  \vspace*{0pt}
   \justifying
 }
 
 \setbeamertemplate{block end}
 {
-  \end{beamercolorbox}
-  \vskip\smallskipamount
+  \end{tcolorbox}
+  \vskip0.7cm
 }
 
 % Alert block definition (with frame)

@@ -13,92 +13,30 @@
 \usepackage{tcolorbox}
 \usepackage{enumitem}
 
-% Espacio horizontal entre columnas (ajústalo a tu gusto)
-\setlength{\columnsep}{1cm} % antes: 1em
-\setlength{\columnseprule}{0mm}
+\colorlet{titlefg}{DarkGreen}
+\setbeamersize{text margin left=3cm,text margin right=3cm}
+\setlength{\columnsep}{1cm}
 
-\title{Gestor inteligente para notas académicas}
+\title{Gestor inteligente para notas academicas}
 \author{Omar Jhonatan Sosa Bobadilla}
 \institute{Universidad Autónoma Metropolitana, Unidad Cuajimalpa}
+
 \begin{document}
-\begin{frame}
 
+\begin{frame}[t]
 
-\begin{columns}[t]
+    \begin{block}{\Large Introducción}
+            \vspace{1cm}
+            
+            Los estudiantes utilizan desde papel hasta herramientas digitales como Notion, Obsidian u OneNote para gestionar información, pero estas plataformas dependen de internet y no ofrecen funciones avanzadas como consultas personalizadas o contextos privados. Además, al usar servicios externos, los usuarios pierden control sobre la privacidad y seguridad de sus datos.\\
+            \end{block}
 
-% ============================================================
-% COL 1
-% ============================================================
+\begin{minipage}[t]{\textwidth}
 
-\begin{column}{0.44\textwidth}
+    \begin{minipage}[t]{0.47\textwidth}
 
-% ------------------------------------------------------------
-    
-\begin{block}{\Large Introducción}
-    En el ámbito académico, los estudiantes generan y consultan apuntes para aprender, pero cuando el volumen de información crece, los medios físicos dificultan su organización, acceso y consulta. Las herramientas digitales modernas, como Notion u Obsidian, mejoran esta experiencia, aunque presentan limitaciones: dependen de internet, no permiten consultas personalizadas y no garantizan seguridad ni control total sobre los datos, lo que pone en riesgo la información almacenada.\\
-    \vspace{0.5cm}
-    Ante estas problemáticas, se plantea desarrollar una aplicación inteligente de gestión de notas que funcione offline, garantice privacidad y seguridad, permita crear una base de conocimiento personalizada y ofrezca recomendaciones de aprendizaje apoyadas en tecnologías como procesamiento local del lenguaje natural y sistemas distribuidos. Esta herramienta busca ofrecer una experiencia confiable, accesible y centrada en el usuario.
-\end{block}
-
-% ------------------------------------------------------------
-\begin{block}{\Large Justificación}
-
-    %La aplicación permitirá crear, organizar y consultar una base de conocimiento personalizada con total privacidad, incorporando tecnologías como bases de datos vectoriales para búsquedas semánticas, modelos de lenguaje locales y sistemas distribuidos, además de ofrecer funciones offline para mejorar la accesibilidad.
-
-    El Gestor inteligente para notas académicas responde a la necesidad de estructurar y consultar información de forma segura, personalizada y eficiente, siendo útil para estudiantes, docentes y profesionales.
-    
-    \vspace{.5cm}
-    \begin{itemize}[leftmargin=*]
-        \item Privacidad y control de datos: el procesamiento local reduce riesgos de filtraciones y mejora el rendimiento.
-        \item Accesibilidad offline: permite consultar información desde cualquier lugar sin depender de internet.
-        \item Colaboración descentralizada: facilita el intercambio de conocimiento sin una arquitectura centralizada.
-        \item Procesamiento de lenguaje natural: potencia funciones avanzadas de búsqueda y análisis de contenido.
-        \item Mejor experiencia de usuario: soporta información multimodal para una interacción más flexible.
-        \item Disponibilidad multiplataforma: accesible en distintos dispositivos y sistemas operativos.   
-    \end{itemize}
-
-\end{block}
-
-
-\begin{block}{\Large Estado del Arte}
-Desarrollar un sistema inteligente capaz de:
-\begin{itemize}[leftmargin=*]
-    \item Centralizar y almacenar notas.
-    \item Clasificarlas automáticamente mediante IA.
-    \item Permitir consultas rápidas, precisas y personalizadas.
-\end{itemize}
-
-%tabla comparativa
-\begin{table}
-\centering
-\begin{tabular}{l|ccc}
-\toprule
-\textbf{Características} & \textbf{Evernote} & \textbf{Notion} & \textbf{Propuesta} \\
-\midrule
-Almacenamiento centralizado & Sí & Sí & Sí \\
-Clasificación automática & No & No & Sí \\
-Consultas personalizadas & Limitado & Limitado & Sí \\
-Interfaz amigable & Sí & Sí & Sí \\
-Soporte multiplataforma & Sí & Sí & Sí \\
-\bottomrule
-\end{tabular}
-
-\end{table}
-
-\end{block}
-
-
-\end{column}
-
-% ============================================================
-% COL 2
-% ============================================================
-
-\begin{column}{0.44\textwidth}
-
-% ------------------------------------------------------------
-\begin{block}{\Large Metodología}
-
+        \begin{block}{\Large Metodología}
+\vspace{.5cm}
 El sistema utiliza técnicas de procesamiento de lenguaje natural para:
 
 \begin{itemize}[leftmargin=*]
@@ -109,15 +47,90 @@ El sistema utiliza técnicas de procesamiento de lenguaje natural para:
 
 Las notas terminan agrupadas dentro de una base de conocimiento estructurada.
 \end{block}
+        
 
+\end{minipage}\hspace{0.02\textwidth}
+% ------------------------------------------------------------
+\begin{minipage}[t]{0.47\textwidth}
+\begin{block}{\Large Justificación}
+    \vspace{1cm}
+
+    %La aplicación permitirá crear, organizar y consultar una base de conocimiento personalizada con total privacidad, incorporando tecnologías como bases de datos vectoriales para búsquedas semánticas, modelos de lenguaje locales y sistemas distribuidos, además de ofrecer funciones offline para mejorar la accesibilidad.
+
+    El \emph{Gestor inteligente para notas académicas} responde a la necesidad de estructurar y consultar información de forma segura, personalizada y eficiente, siendo útil para estudiantes, docentes y profesionales.
+    
+    \vspace{.5cm}
+    \begin{itemize}[leftmargin=*]
+        \item Privacidad y control de datos.
+        \item Accesibilidad offline.
+        \item Colaboración descentralizada.
+        \item Procesamiento de lenguaje natural.
+        \item Mejor experiencia de usuario.
+        \item Disponibilidad multiplataforma.   
+    \end{itemize}
+
+\end{block}
+\end{minipage}
+
+\end{minipage}
+
+% ============================================================
+% COL 2
+% ============================================================
+
+\begin{minipage}[t][0.3\textheight][t]{\textwidth}
+    \vspace{1cm}
+
+
+\begin{block}{\Large Estado del Arte}
+    \vspace{1cm}
+Las principales caracteristicas que diferencian el \emph{Gestor inteligente para notas académicas} con respecto a las soluciones encontradas en el mercado.
+\vspace{1cm}
+%tabla comparativa
+\begin{table}[H]
+\centering
+\small
+\setlength{\tabcolsep}{50pt}
+\renewcommand{\arraystretch}{1.20}
+\begin{tabular}{|l|c|c|c|c|}
+\toprule
+\textbf{Características} & \textbf{Notion} & \textbf{Obsidian} & \textbf{NotebookLM} & \textbf{Propuesta} \\
+\midrule
+Enfoque principal & Productividad & Conocimiento personal & Resúmenes con IA & Gestión académica con IA local \\
+\hline
+Privacidad & Baja (nube) & Media (local + sync) & Baja (Google) & Alta (100\% local) \\
+\hline
+Acceso sin conexión & Limitado & Parcial & No & Total \\
+\hline
+IA integrada & Sí (nube) & No nativa & Sí (nube) & Sí (local) \\
+\hline
+Colaboración & Alta & Limitada & No & Distribuida \\
+\hline
+Facilidad de uso & Intuitiva & Técnica & Simple & Ligera e intuitiva \\
+\hline
+Enfoque educativo & General & Investigación personal & Lectura/síntesis & Estudiantes y docentes \\
+\hline
+Soporte multiplataforma & Sí & Sí & Sí & Sí \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\vspace{.5cm}
+
+\end{block}
+
+% ------------------------------------------------------------
+\begin{minipage}[t]{0.48\textwidth}
 
 
 % ------------------------------------------------------------
 \begin{block}{\Large Propuesta}
-El usuario puede realizar consultas como:
+\vspace{.5cm}
+    
+Por ello, se plantea una aplicación inteligente que funcione offline, permita crear una base de conocimiento personalizada y asegure la protección de la información mediante tecnologías como procesamiento local del lenguaje, interfaces especializadas y sistemas distribuidos. El usuario puede realizar consultas como:
 
 \begin{quote}
-\emph{\textquestiondown Qué vimos en Sistemas Operativos el 31-10-25?}
+\emph{\textquestiondown~Qué vimos en Sistemas Operativos el 31--10--25?}
 \end{quote}
 
 La IA analiza la base de conocimiento y devuelve:
@@ -129,21 +142,22 @@ La IA analiza la base de conocimiento y devuelve:
 La aplicación resuelve problemas reales de organización y consulta de información mediante:
 \begin{itemize}[leftmargin=*]
     \item Centralización de notas.
-    \item Clasificación automática con IA.
+    \item Clasificación automática con IA.\@
     \item Consultas naturales y personalizadas.
 \end{itemize}
-\begin{center}
-\includegraphics[width=0.8\linewidth]{images/Contexto_2.png}
-\end{center}
 
 \end{block}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
 
+\begin{block}{\large Contexto de uso}
+    \begin{center}
+    \includegraphics[width=.68\linewidth]{images/Contexto_2.png}
+    \end{center}
+    \end{block}
+\end{minipage}
 
-
-\end{column}
-
-
-\end{columns}
+\end{minipage}
 
 \end{frame}
 \end{document}
